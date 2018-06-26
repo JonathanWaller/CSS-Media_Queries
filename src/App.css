@@ -1,0 +1,103 @@
+.app {
+  background-image: url("./images/css-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  width: 100%;
+  background: transparent;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 47%;
+}
+.nav-links {
+  margin: 0 1vw;
+}
+
+.nav-links:hover {
+  color: #fed136;
+}
+
+.logo-button {
+  color: #fed136;
+  margin: 0 12vw;
+  font-size: 1.5em;
+}
+
+.menu {
+  display: none;
+  margin: 0 10vw;
+  border-radius: 4px;
+  border-style: none;
+  height: 4vh;
+  width: 75px;
+  background: #fed136;
+  color: white;
+  font-size: 0.75em;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 35vh auto;
+}
+.h2 {
+  font-size: 40px;
+}
+.h1 {
+  font-size: 75px;
+  margin-top: 2vh;
+}
+.more {
+  background: #fed136;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  height: 65px;
+  width: 165px;
+  font-weight: bolder;
+  font-size: 1em;
+  margin: 5vh auto;
+}
+
+@media (max-width: 990px) {
+  .menu {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+  .header {
+    background: #212529;
+  }
+}
+
+@media (max-width: 765px) {
+  app {
+    background-size: 800px;
+  }
+  .content {
+    margin: 15vh auto;
+  }
+  .h2 {
+    font-size: 22px;
+  }
+  .h1 {
+    font-size: 50px;
+  }
+  .logo-button {
+    margin: 0 3vw;
+  }
+}
